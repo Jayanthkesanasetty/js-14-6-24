@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dob=new Date()
+        date=dob.getDate()
+        month=dob.getMonth()
+        year=dob.getFullYear()
+        var curr=""
+        var cur=[]
+        let dat= prompt("ENTER DATE OF BIRTH (1 to 31) : ");
+        let mon=prompt("ENTER MONTH OF BIRTH (0 to 11): ");
+        let y=prompt("ENTER YEAR OF BIRTH(UPTO THIS YEAR): ");
+        curr= "Date: "+dat+"  month: "+mon+"  year: "+y;
+        cur.push(dat,mon,y)
+        console.log(curr);
+        document.write(curr);
+        for(i of cur){
+        if(y<=year){
+            console.log("Date of birth is accepted");
+            document.write("Date of birth is accepted")
+            break;
+        }
+        else{
+            console.log("Date of Birth is Invalid. Please check the date of birth");
+            document.write("Date of Birth is Invalid. Please check the date of birth");
+            break;
+        }
+        }
+</script>
+</body>
+</html>
